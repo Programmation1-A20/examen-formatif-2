@@ -15,7 +15,7 @@ for(var i = 1; i <= 5; i++) {
     console.log(caracteres + ' ' + texte + caracteres);
 
     // Calcul du nombre de départ de la prochaine ligne
-    nombre = (nombre -1 ) * 2;
+    nombre = (nombre -1) * 2;
 
     // Réinitialisation du texte à afficher sur la prochaine ligne
     texte = '';
