@@ -10,7 +10,7 @@ var note = 0;
 
 while(note >= 0) {
     note = parseInt(prompt('Veuillez entrer une note: '));
-    if(note > 0) {
+    if(note >= 0) {
         nbNotes++;
         totalNotes += note;
         if(note <= 49) {
