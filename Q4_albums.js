@@ -4,7 +4,7 @@ var valeur = 1;
 var nbMauvaisesValeursEntrees = 0;
 var lectureTerminee = false;
 
-while(lectureTerminee === false) {
+while(lectureTerminee === false) { // ou while(valeur != '0')
     valeur = prompt('Veuillez saisir une valeur entre 1 et 5: ');
 
     switch(valeur) {
@@ -23,10 +23,10 @@ while(lectureTerminee === false) {
         case '5':
             console.log('Album Jazz');
             break;
-        case '0':
-            lectureTerminee = true;
+        case '0': // Si lectureTerminee utilisé dans le while, sinon, pas nécessaire
+            lectureTerminee = true;  
             break;
-        default :
+        default :  
             nbMauvaisesValeursEntrees++;
             console.log('Cette option n’est pas disponible');
     }
